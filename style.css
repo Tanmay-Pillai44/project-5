@@ -1,0 +1,279 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: whitesmoke;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+.header {
+    margin: 20px auto;
+    width: 75%;
+    min-height: 600px;
+}
+
+.header.disable {
+    user-select: none;
+    filter: blur(3px);
+    margin: 20px auto;
+    width: 75%;
+    min-height: 600px;
+}
+
+#title {
+    width: 99%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title.inactive {
+    display: none;
+}
+
+#title2 {
+    display: none;
+}
+
+#title2.active {
+    width: 99%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-title {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.tasks {
+    font-weight: bolder;
+    color: rgb(66, 56, 56);
+    font-size: 4rem;
+    margin-right: 5px;
+}
+
+.lists {
+    font-weight: lighter;
+    font-size: 4rem;
+    color: rgb(255, 148, 129)
+}
+
+.list-head {
+    font-size: 60px;
+    margin-top: 5px;
+    color: rgb(66, 56, 56);
+    text-align: center;
+}
+
+.back-title {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+    right: 40px;
+}
+
+.back-text {
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: rgb(66, 56, 56);
+}
+
+.mid-title {
+    font-size: 60px;
+    color: crimson;
+    margin-right: 80px;
+    display: none;
+}
+
+.mid-title.active {
+    display: block;
+}
+
+.right-title {
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.material-icons.md-48 {
+    margin-top: 6px;
+    font-size: 3.2rem;
+    color: tomato;
+}
+
+.add-text {
+    color: rgb(66, 56, 56);
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.no-items {
+    margin-left: 10px;
+    margin-top: 30px;
+    color: rgb(66, 56, 56);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#dynamic-box, #dynamic-box2 {
+    margin-top: 50px;
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#dynamic-box.disabled, #dynamic-box2.disabled {
+    display: none;
+}
+
+.dynamic-cards {
+    width: 250px;
+    min-height: 350px;
+    background-color: whitesmoke;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #ebdede;
+    margin: 20px;
+    position: relative;
+}
+
+.items {
+    min-height: 200px;
+}
+
+.innerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intext {
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(66, 56, 56);;
+}
+
+.mark {
+    border: none;
+    width: 70px;
+    min-height: 20px;
+    font-size: 11px;
+    margin: 10px 5px;
+    background-color: lightgreen;
+    border-radius: 20px 20px;
+    cursor: pointer;
+}
+
+.dt-1 {
+    text-align: center;
+    color: tomato;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.dt-1.disable {
+    pointer-events: none;
+}
+
+.del-icon, .add-icon {
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.del-icon {
+    position: absolute;
+    top: 290px;
+    left: 140px;
+    color: red;
+}
+
+.add-icon {
+    position: absolute;
+    top: 290px;
+    left: 190px;
+    color: darkgreen;
+}
+
+.material-icons.md-36 {
+    margin-top: 6px;
+    font-size: 2.5rem;
+}
+
+.new-list, .new-item {
+    color: tomato;
+    font-size: 2rem;
+    width: 400px;
+    height: 210px;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    padding: 15px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 2;
+    box-shadow: 8px 8px 8px lightgray;
+    display: none;
+}
+
+
+.new-list.active,
+.new-item.active {
+    display: block;
+}
+
+.popup-text {
+    color: tomato;
+    font-size: 2rem;
+    margin: 0px auto;
+}
+
+.list-input, .item-input {
+    border: 1px solid tomato;
+    box-shadow: 2px 2px 2px lightgray;
+    border-radius: 3px;
+    transform: scale(2);
+    text-align: center;
+}
+
+.add-btn, .close-btn {
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    transform: scale(1.5);
+    padding: 8px 20px;
+    margin-top: 30px;;
+    cursor: pointer;
+}
+
+.add-btn {
+    margin-right: 20px;
+}
+
+.close-btn {
+    margin-left: 20px;
+}
+
+.dynamic-cards:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}

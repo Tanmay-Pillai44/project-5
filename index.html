@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="img.ico">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div id="title">
+            <div class="left-title">
+                <span class="tasks">Tasks</span>
+                <span class="lists">Lists</span>
+            </div>
+            <div class="right-title" onclick="popupList()">
+                <div class="add logo">
+                        <span class="material-icons md-48 icon" >add_circle</span>
+                </div>
+                <div class="add-text">Add List</div>
+            </div>
+        </div>
+
+        <div class="title2" id="title2">
+            <div class="back-title" onclick="backToHome()">
+                <span class="material-icons md-48 back-icon">arrow_circle_left</span>
+                <div class="back-text">Back</div>
+            </div>
+            <div class="mid-title"></div>
+            <div class="add-title" onclick="addTitleBtn()">
+                <span class="material-icons md-48 icon">add_circle</span>
+            </div>
+        </div>
+
+        <div class="no-items">No Items In The To-Do List</div>
+        <div id="dynamic-box"></div>
+    </header>
+
+
+
+    <div class="new-list">
+        <p class="popup-text">Add New List</p>
+        <input type="text" placeholder="Add New List" class="list-input"/>
+        <div class="buttons">
+            <button class="add-btn" onclick="addList()">Add</button>
+            <button class="close-btn" onclick="popupList()">Close</button>
+        </div>
+    </div>
+
+    <div class="new-item">
+        <p class="popup-text">Add New Item</p>
+        <input type="text" placeholder="Add New Item" class="item-input"/>
+        <div class="buttons">
+            <button class="add-btn" onclick="addItem()">Add</button>
+            <button class="close-btn" onclick="popupItem(false)">Close</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
