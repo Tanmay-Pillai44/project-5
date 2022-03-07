@@ -28,8 +28,13 @@ body {
 #title {
     width: 99%;
     height: 70px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: whitesmoke;
 }
 
 #title.inactive {
@@ -221,7 +226,7 @@ body {
     font-size: 2rem;
     width: 400px;
     height: 210px;
-    position: absolute;
+    position: fixed;
     top: 30%;
     left: 36%;
     padding: 15px;
